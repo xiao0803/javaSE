@@ -6,6 +6,9 @@ import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 此demo没有体现出ThreadLocal对共享数据进行隔离的作用
+ */
 public class ThreadLocalDemo {
 
 	private static final ThreadLocal<Person> personLocal = new ThreadLocal<>();
