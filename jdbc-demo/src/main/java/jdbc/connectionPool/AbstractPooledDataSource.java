@@ -70,10 +70,9 @@ public class AbstractPooledDataSource implements PooledDataSource {
      * @version 
      * @throws 
      */
-    protected Connection openConnection() throws SQLException {
-        return DriverManager.getConnection(configuration.getUrl(),
-                configuration.getUser(), configuration.getPassword());
-    }
+	protected Connection openConnection() throws SQLException {
+		return DriverManager.getConnection(configuration.getUrl(), configuration.getUser(), configuration.getPassword());
+	}
     
     /**
      * 获取连接对象；idleQueue里面移除一个连接对象，busyQueue里面添加一个连接对象；

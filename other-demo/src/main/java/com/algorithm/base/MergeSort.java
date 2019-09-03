@@ -1,8 +1,5 @@
 package com.algorithm.base;
 
-import java.util.HashMap;
-import java.util.TreeMap;
-
 public class MergeSort {
 
     @SuppressWarnings("unchecked")

@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  */
 public class Client {
     public static void main(String[] args) throws Exception {
-        Configuration conf = new Configuration("product_db");
+        Configuration conf = new Configuration("jdbcConf");
         final AbstractPooledDataSource dataSource = new AbstractPooledDataSource(
                 conf);
         ExecutorService executor = Executors.newFixedThreadPool(10);
