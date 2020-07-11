@@ -1,5 +1,6 @@
 package com.concurrent.threadPool;
 
+import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -10,11 +11,11 @@ public class ThreadPoolDemo {
 	 */
 	public static void main(String[] args) {
 		// 固定线程池大小
-		// ExecutorService threadPool = Executors.newFixedThreadPool(3);
+		ExecutorService threadPool = Executors.newFixedThreadPool(3);
 		// 可缓存的线程池
 		// ExecutorService threadPool = Executors.newCachedThreadPool();
 		// 单线程的线程池
-		ExecutorService threadPool = Executors.newSingleThreadExecutor();
+		//ExecutorService threadPool = Executors.newSingleThreadExecutor();
 
 		// 向线程池中放入10个任务，每次只能为一个任务服务（单线程的线程池）
 		for (int i = 1; i <= 10; i++) {

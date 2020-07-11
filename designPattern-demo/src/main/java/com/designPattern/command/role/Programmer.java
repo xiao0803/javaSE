@@ -1,5 +1,6 @@
-package com.designPattern.command;
+package com.designPattern.command.role;
 
+//程序员（请求接受者、请求实现者）
 public class Programmer {
 
     private String name;

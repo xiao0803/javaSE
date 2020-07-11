@@ -1,5 +1,16 @@
 package com.algorithm.base;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class MergeSort {
 
     @SuppressWarnings("unchecked")
@@ -64,8 +75,18 @@ public class MergeSort {
     //for test purpose
     public static void main(String[] args) {
         Integer[] arr = {24,13,26,1,2,27,38,15};
-        mergeSort(arr);
-        for (Integer i : arr)
-            System.out.print(i + " ");
+        /*mergeSort(arr);
+        for (Integer i : arr){
+        	System.out.print(i + " ");
+        }*/
+        
+        int i = 0;
+        while (true) {
+        	i++;
+			System.out.println(arr[i]);
+			if (i==3) {
+				break;
+			}
+		}
     }
 }

@@ -1,4 +1,6 @@
-package com.designPattern.command;
+package com.designPattern.command.task;
+
+import com.designPattern.command.role.Programmer;
 
 /*
  * 需求任务
