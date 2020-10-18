@@ -1,16 +1,16 @@
-package demo.socket.aio.server;
+package demo.aio.socket.server;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.channels.AsynchronousServerSocketChannel;
 import java.util.concurrent.CountDownLatch;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
 /**
  * 异步非阻塞服务器处理类
  * 
- * @author Evsward
+ * @author xiaolj
  *
  */
 public class AsyncServerHandler extends Base implements Runnable {
@@ -36,9 +36,9 @@ public class AsyncServerHandler extends Base implements Runnable {
 	@Override
 	public void run() {
 		latch = new CountDownLatch(1);// 初始化倒计时次数为1
-		doAccept();
+		this.doAccept();
 		try {
-			latch.await();// 倒计时门闩开始阻塞，知道倒计时为0，如果在这期间线程中断，则抛异常：InterruptedException。
+			latch.await();// 倒计时门闩开始阻塞，直到倒计时为0，如果在这期间线程中断，则抛异常：InterruptedException。
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

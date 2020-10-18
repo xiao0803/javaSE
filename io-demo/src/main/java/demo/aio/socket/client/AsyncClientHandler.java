@@ -1,4 +1,4 @@
-package demo.socket.aio.client;
+package demo.aio.socket.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
 import java.util.concurrent.CountDownLatch;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
 /**
  * 异步非阻塞客户端处理类
@@ -21,7 +21,7 @@ import demo.socket.base.Base;
  * 
  * 注意：Void作为类型要首字母大写，就好像只有Integer可以作为泛型类型而不是int一样，但Void不是引用类型，这里只是一种表示void类型的情况。
  * 
- * @author Evsward
+ * @author xiaolj
  *
  */
 public class AsyncClientHandler extends Base implements CompletionHandler<Void, AsyncClientHandler>, Runnable {

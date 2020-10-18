@@ -1,4 +1,4 @@
-package demo.socket.nio.server;
+package demo.nio.socket.server;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -11,14 +11,14 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
 /**
  * 基于TCP的NIO服务端多路复用类（多路是基于单线程实现的"多线程"）
  * 
  * 该类实现了Runnable接口，是一个独立的线程，负责轮询多路复用器Selector，可以处理多个客户端的并发接入。
  * 
- * @author Evsward
+ * @author xiaolj
  *
  */
 public class ReactorServerHandler extends Base implements Runnable {

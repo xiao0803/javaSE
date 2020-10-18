@@ -1,8 +1,8 @@
-package demo.socket.aio.client;
+package demo.aio.socket.client;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
-public class AIOTCPClient extends Base {
+public class AIOClient extends Base {
 	public static void main(String[] args) {
 		new Thread(new AsyncClientHandler(), "nio-client-reactor-001").start();
 	}

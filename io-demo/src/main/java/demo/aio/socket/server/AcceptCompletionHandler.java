@@ -1,10 +1,10 @@
-package demo.socket.aio.server;
+package demo.aio.socket.server;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
 /**
  * accept方法的回调操作
@@ -13,7 +13,7 @@ import demo.socket.base.Base;
  * 
  * 这两个参数对应的也就是回调函数completed的参数类型
  * 
- * @author Evsward
+ * @author xiaolj
  *
  */
 public class AcceptCompletionHandler extends Base implements CompletionHandler<AsynchronousSocketChannel, AsyncServerHandler> {

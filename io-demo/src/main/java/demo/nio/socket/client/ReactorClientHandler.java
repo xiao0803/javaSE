@@ -1,4 +1,4 @@
-package demo.socket.nio.client;
+package demo.nio.socket.client;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -9,7 +9,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-import demo.socket.base.Base;
+import demo.base.Base;
 
 public class ReactorClientHandler extends Base implements Runnable {
 
