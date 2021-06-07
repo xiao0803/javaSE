@@ -22,6 +22,11 @@ public class ThreadSynchronized {
 			@Override
 			public void run() {
 				System.out.println(Thread.currentThread().getName());
+				try {
+					Thread.sleep(1000*60*60);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 				/*while (true) {
 					try {
 						Thread.sleep(10);
@@ -37,6 +42,11 @@ public class ThreadSynchronized {
 			@Override
 			public void run() {
 				System.out.println(Thread.currentThread().getName());
+				try {
+					Thread.sleep(1000*60*50);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 				/*int i = 10;
 				while (i > 0) {
 					i--;
